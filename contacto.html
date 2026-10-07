@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto | Logic Hardware</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a0a0f'/%3E%3Crect x='25' y='25' width='50' height='50' rx='8' fill='none' stroke='%23ff2e2e' stroke-width='3'/%3E%3Ctext x='50' y='58' text-anchor='middle' fill='%23ff2e2e' font-size='22' font-weight='900' font-family='Arial'%3ELH%3C/text%3E%3C/svg%3E">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor-glow"></div><div class="cursor-dot"></div>
+<div class="progress-bar-lh" id="progressBar"></div>
+<div class="scroll-circle"><svg viewBox="0 0 50 50"><circle class="circle-bg" cx="25" cy="25" r="22"/><circle class="circle-progress" cx="25" cy="25" r="22"/></svg><div class="circle-text">0%</div></div>
+<button class="back-to-top" aria-label="Volver arriba"><i class="bi bi-arrow-up"></i></button>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-lh fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <svg class="logo-svg" viewBox="0 0 100 100">
+                <g transform="translate(72,28)" fill="#6b7280"><circle cx="0" cy="0" r="13"/><rect x="-3" y="-16" width="6" height="6" rx="1"/><rect x="-3" y="10" width="6" height="6" rx="1"/><rect x="-16" y="-3" width="6" height="6" rx="1"/><rect x="10" y="-3" width="6" height="6" rx="1"/><circle cx="0" cy="0" r="5" fill="#12121a"/></g>
+                <g transform="translate(28,72)" fill="#6b7280"><circle cx="0" cy="0" r="10"/><rect x="-2" y="-13" width="5" height="5" rx="1"/><rect x="-2" y="8" width="5" height="5" rx="1"/><rect x="-13" y="-2" width="5" height="5" rx="1"/><rect x="8" y="-2" width="5" height="5" rx="1"/><circle cx="0" cy="0" r="4" fill="#12121a"/></g>
+                <rect x="26" y="26" width="48" height="48" rx="8" fill="none" stroke="#ff2e2e" stroke-width="3.5"/>
+                <g fill="#ff2e2e"><rect x="31" y="20" width="2.5" height="7"/><rect x="38" y="20" width="2.5" height="7"/><rect x="45" y="20" width="2.5" height="7"/><rect x="52" y="20" width="2.5" height="7"/><rect x="59" y="20" width="2.5" height="7"/><rect x="66" y="20" width="2.5" height="7"/><rect x="31" y="73" width="2.5" height="7"/><rect x="38" y="73" width="2.5" height="7"/><rect x="45" y="73" width="2.5" height="7"/><rect x="52" y="73" width="2.5" height="7"/><rect x="59" y="73" width="2.5" height="7"/><rect x="66" y="73" width="2.5" height="7"/><rect x="19" y="31" width="7" height="2.5"/><rect x="19" y="38" width="7" height="2.5"/><rect x="19" y="45" width="7" height="2.5"/><rect x="19" y="52" width="7" height="2.5"/><rect x="19" y="59" width="7" height="2.5"/><rect x="19" y="66" width="7" height="2.5"/><rect x="74" y="31" width="7" height="2.5"/><rect x="74" y="38" width="7" height="2.5"/><rect x="74" y="45" width="7" height="2.5"/><rect x="74" y="52" width="7" height="2.5"/><rect x="74" y="59" width="7" height="2.5"/><rect x="74" y="66" width="7" height="2.5"/></g>
+                <g stroke="#ff2e2e" stroke-width="1.8" fill="none" stroke-linecap="round"><path d="M 33 38 L 38 38 L 38 42 L 43 42"/><path d="M 43 42 L 43 48 L 50 48"/><path d="M 60 38 L 60 45 L 66 45 L 66 52"/><path d="M 36 60 L 42 60 L 42 55 L 48 55"/><path d="M 55 58 L 62 58 L 62 52"/></g>
+                <text x="50" y="60" text-anchor="middle" fill="#ff2e2e" font-size="22" font-weight="900" font-family="Arial">LH</text>
+            </svg>
+            Logic<span>Hardware</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><i class="bi bi-list text-white fs-3"></i></button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="problema.html">Problema</a></li>
+                <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                <li class="nav-item"><a class="nav-link" href="justificacion.html">Justificación</a></li>
+                <li class="nav-item"><a class="nav-link" href="solucion.html">Solución</a></li>
+                <li class="nav-item"><a class="nav-link" href="proceso.html">Proceso</a></li>
+                <li class="nav-item"><a class="nav-contact-btn active" href="contacto.html"><i class="bi bi-chat-dots"></i> Contactar</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ================= CONTACTO ================= -->
+<section class="section" id="contacto" style="padding-top: 60px;">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">Contacto</span>
+            <h2 class="section-title">¿Hablamos? <span>Estamos aquí</span></h2>
+            <p class="section-subtitle">Contáctanos para cotizaciones, dudas o para solicitar una demo del sistema. Respondemos en menos de 24 horas.</p>
+        </div>
+
+        <!-- Tarjetas de contacto -->
+        <div class="row g-4 justify-content-center mb-5">
+            <div class="col-md-6 col-lg-4 reveal">
+                <a href="https://wa.me/50374405490?text=Hola,%20me%20interesa%20Logic%20Hardware" target="_blank" class="contact-card">
+                    <div class="contact-icon"><i class="bi bi-whatsapp"></i></div>
+                    <h5>WhatsApp</h5>
+                    <p>Respuesta inmediata en horario laboral</p>
+                    <div class="contact-value">+503 7440-5490</div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 reveal">
+                <a href="mailto:contacto@logichardware.com?subject=Cotización%20Logic%20Hardware" class="contact-card">
+                    <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+                    <h5>Correo Electrónico</h5>
+                    <p>Cotizaciones y consultas formales</p>
+                    <div class="contact-value">contacto@logichardware.com</div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 reveal">
+                <a href="tel:+50322222222" class="contact-card">
+                    <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+                    <h5>Llamada telefónica</h5>
+                    <p>Lunes a viernes · 8:00 am a 5:00 pm</p>
+                    <div class="contact-value">+503 2222-2222</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Mapa + Formulario -->
+        <div class="row g-4">
+            <!-- Mapa -->
+            <div class="col-lg-6 reveal">
+                <div class="map-card">
+                    <div class="map-wrapper">
+                        <iframe
+                            src="https://maps.google.com/maps?q=INFRAMEN%20San%20Salvador&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Ubicación INFRAMEN">
+                        </iframe>
+                    </div>
+                    <div class="map-info">
+                        <h5><i class="bi bi-geo-alt-fill text-danger me-2"></i>Visítanos en INFRAMEN</h5>
+                        <ul class="contact-info-list">
+                            <li><i class="bi bi-telephone-fill"></i><span><strong>Teléfono:</strong> +503 2222-2222</span></li>
+                            <li><i class="bi bi-envelope-fill"></i><span><strong>Correo:</strong> contacto@logichardware.com</span></li>
+                            <li><i class="bi bi-geo-alt-fill"></i><span><strong>Ubicación:</strong> INFRAMEN, San Salvador</span></li>
+                            <li><i class="bi bi-clock-fill"></i><span><strong>Horario:</strong> Lun a Vie · 8:00 am - 5:00 pm</span></li>
+                        </ul>
+                        <a href="https://maps.google.com/?q=INFRAMEN+San+Salvador" target="_blank" class="btn btn-lh-primary w-100 justify-content-center">
+                            <i class="bi bi-geo-alt"></i> Abrir en Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulario de cotización -->
+            <div class="col-lg-6 reveal">
+                <div class="quote-card">
+                    <h5><i class="bi bi-file-earmark-text text-danger me-2"></i>Solicitar Cotización</h5>
+                    <p class="quote-sub">Completa el formulario y te enviaremos un presupuesto personalizado. Puedes enviarlo por WhatsApp o por correo.</p>
+                    <form id="quoteForm" class="quote-form" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="qNombre">Nombre completo *</label>
+                                <input type="text" id="qNombre" name="nombre" required placeholder="Tu nombre">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="qTel">Teléfono *</label>
+                                <input type="tel" id="qTel" name="telefono" required placeholder="0000-0000">
+                            </div>
+                            <div class="col-12">
+                                <label for="qCorreo">Correo electrónico</label>
+                                <input type="email" id="qCorreo" name="correo" placeholder="correo@ejemplo.com">
+                            </div>
+                            <div class="col-12">
+                                <label for="qServicio">Tipo de servicio *</label>
+                                <select id="qServicio" name="servicio" required>
+                                    <option value="">Selecciona un servicio</option>
+                                    <option>Diagnóstico de equipo</option>
+                                    <option>Reparación de laptop</option>
+                                    <option>Reparación de PC de escritorio</option>
+                                    <option>Mantenimiento preventivo</option>
+                                    <option>Cambio de pieza / repuesto</option>
+                                    <option>Recuperación de datos</option>
+                                    <option>Instalación de software</option>
+                                    <option>Otro</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="qEquipo">Equipo (marca y modelo)</label>
+                                <input type="text" id="qEquipo" name="equipo" placeholder="Ej: Dell XPS 13, HP Pavilion...">
+                            </div>
+                            <div class="col-12">
+                                <label for="qDesc">Descripción del problema *</label>
+                                <textarea id="qDesc" name="descripcion" rows="3" required placeholder="Describe el problema del equipo..."></textarea>
+                            </div>
+                        </div>
+                        <div class="quote-actions">
+                            <button type="submit" class="btn btn-lh-primary justify-content-center">
+                                <i class="bi bi-whatsapp"></i> Enviar por WhatsApp
+                            </button>
+                            <button type="button" class="btn btn-lh-outline justify-content-center" id="sendEmailBtn">
+                                <i class="bi bi-envelope"></i> Enviar por Correo
+                            </button>
+                        </div>
+                        <div class="form-success" id="formSuccess">
+                            <i class="bi bi-check-circle-fill me-1"></i> ¡Abriendo tu aplicación para enviar la solicitud!
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-divider">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path fill="#0f0e17" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"/></svg>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="row g-4 mb-4">
+            <div class="col-lg-5">
+                <div class="footer-brand">
+                    <svg viewBox="0 0 100 100"><rect x="26" y="26" width="48" height="48" rx="8" fill="none" stroke="#ff2e2e" stroke-width="3.5"/><g fill="#ff2e2e"><rect x="31" y="20" width="2.5" height="7"/><rect x="38" y="20" width="2.5" height="7"/><rect x="45" y="20" width="2.5" height="7"/><rect x="52" y="20" width="2.5" height="7"/><rect x="59" y="20" width="2.5" height="7"/><rect x="66" y="20" width="2.5" height="7"/></g><text x="50" y="60" text-anchor="middle" fill="#ff2e2e" font-size="22" font-weight="900" font-family="Arial">LH</text></svg>
+                    <div><h4>Logic<span>Hardware</span></h4><div class="tagline">Sistema de Gestión de Reparaciones</div></div>
+                </div>
+                <p>Proyecto V1 del módulo 3.1, Especialidad Desarrollo de Software. Sistema de escritorio para la gestión completa de reparaciones de hardware.</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h6>Contacto</h6>
+                <ul>
+                    <li><i class="bi bi-envelope me-2"></i><a href="mailto:contacto@logichardware.com">contacto@logichardware.com</a></li>
+                    <li><i class="bi bi-whatsapp me-2"></i><a href="https://wa.me/50374405490" target="_blank">+503 7440-5490</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Logic Hardware · Instituto Nacional General Francisco Menéndez · Todos los derechos reservados.</div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

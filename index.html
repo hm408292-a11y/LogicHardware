@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inicio | Logic Hardware</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a0a0f'/%3E%3Crect x='25' y='25' width='50' height='50' rx='8' fill='none' stroke='%23ff2e2e' stroke-width='3'/%3E%3Ctext x='50' y='58' text-anchor='middle' fill='%23ff2e2e' font-size='22' font-weight='900' font-family='Arial'%3ELH%3C/text%3E%3C/svg%3E">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="preloader">
+    <svg class="preloader-logo" viewBox="0 0 100 100">
+        <rect x="26" y="26" width="48" height="48" rx="8" fill="none" stroke="#ff2e2e" stroke-width="3.5"/>
+        <g fill="#ff2e2e"><rect x="31" y="20" width="2.5" height="7"/><rect x="38" y="20" width="2.5" height="7"/><rect x="45" y="20" width="2.5" height="7"/><rect x="52" y="20" width="2.5" height="7"/><rect x="59" y="20" width="2.5" height="7"/><rect x="66" y="20" width="2.5" height="7"/></g>
+        <text x="50" y="60" text-anchor="middle" fill="#ff2e2e" font-size="22" font-weight="900" font-family="Arial">LH</text>
+    </svg>
+    <div class="preloader-bar"></div>
+    <div class="preloader-text">Cargando Logic Hardware</div>
+</div>
+
+<div class="cursor-glow"></div>
+<div class="cursor-dot"></div>
+<div class="progress-bar-lh" id="progressBar"></div>
+<div class="scroll-circle"><svg viewBox="0 0 50 50"><circle class="circle-bg" cx="25" cy="25" r="22"/><circle class="circle-progress" cx="25" cy="25" r="22"/></svg><div class="circle-text">0%</div></div>
+<button class="back-to-top" aria-label="Volver arriba"><i class="bi bi-arrow-up"></i></button>
+
+<nav class="navbar navbar-expand-lg navbar-lh fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <svg class="logo-svg" viewBox="0 0 100 100">
+                <g transform="translate(72,28)" fill="#6b7280"><circle cx="0" cy="0" r="13"/><rect x="-3" y="-16" width="6" height="6" rx="1"/><rect x="-3" y="10" width="6" height="6" rx="1"/><rect x="-16" y="-3" width="6" height="6" rx="1"/><rect x="10" y="-3" width="6" height="6" rx="1"/><circle cx="0" cy="0" r="5" fill="#12121a"/></g>
+                <g transform="translate(28,72)" fill="#6b7280"><circle cx="0" cy="0" r="10"/><rect x="-2" y="-13" width="5" height="5" rx="1"/><rect x="-2" y="8" width="5" height="5" rx="1"/><rect x="-13" y="-2" width="5" height="5" rx="1"/><rect x="8" y="-2" width="5" height="5" rx="1"/><circle cx="0" cy="0" r="4" fill="#12121a"/></g>
+                <rect x="26" y="26" width="48" height="48" rx="8" fill="none" stroke="#ff2e2e" stroke-width="3.5"/>
+                <g fill="#ff2e2e"><rect x="31" y="20" width="2.5" height="7"/><rect x="38" y="20" width="2.5" height="7"/><rect x="45" y="20" width="2.5" height="7"/><rect x="52" y="20" width="2.5" height="7"/><rect x="59" y="20" width="2.5" height="7"/><rect x="66" y="20" width="2.5" height="7"/><rect x="31" y="73" width="2.5" height="7"/><rect x="38" y="73" width="2.5" height="7"/><rect x="45" y="73" width="2.5" height="7"/><rect x="52" y="73" width="2.5" height="7"/><rect x="59" y="73" width="2.5" height="7"/><rect x="66" y="73" width="2.5" height="7"/><rect x="19" y="31" width="7" height="2.5"/><rect x="19" y="38" width="7" height="2.5"/><rect x="19" y="45" width="7" height="2.5"/><rect x="19" y="52" width="7" height="2.5"/><rect x="19" y="59" width="7" height="2.5"/><rect x="19" y="66" width="7" height="2.5"/><rect x="74" y="31" width="7" height="2.5"/><rect x="74" y="38" width="7" height="2.5"/><rect x="74" y="45" width="7" height="2.5"/><rect x="74" y="52" width="7" height="2.5"/><rect x="74" y="59" width="7" height="2.5"/><rect x="74" y="66" width="7" height="2.5"/></g>
+                <g stroke="#ff2e2e" stroke-width="1.8" fill="none" stroke-linecap="round"><path d="M 33 38 L 38 38 L 38 42 L 43 42"/><path d="M 43 42 L 43 48 L 50 48"/><path d="M 60 38 L 60 45 L 66 45 L 66 52"/><path d="M 36 60 L 42 60 L 42 55 L 48 55"/><path d="M 55 58 L 62 58 L 62 52"/></g>
+                <text x="50" y="60" text-anchor="middle" fill="#ff2e2e" font-size="22" font-weight="900" font-family="Arial">LH</text>
+            </svg>
+            Logic<span>Hardware</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><i class="bi bi-list text-white fs-3"></i></button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="problema.html">Problema</a></li>
+                <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                <li class="nav-item"><a class="nav-link" href="justificacion.html">Justificación</a></li>
+                <li class="nav-item"><a class="nav-link" href="solucion.html">Solución</a></li>
+                <li class="nav-item"><a class="nav-link" href="proceso.html">Proceso</a></li>
+                <li class="nav-item"><a class="nav-contact-btn" href="contacto.html"><i class="bi bi-chat-dots"></i> Contactar</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-bg-glow one"></div>
+    <div class="hero-bg-glow two"></div>
+    <div class="container hero-content">
+        <div class="row">
+            <div class="col-lg-10 mx-auto text-center">
+                <div class="hero-badge">Proyecto V1 · Módulo 3.1 · Sección 3-3</div>
+                <h1>Gestiona tus reparaciones <span class="text-gradient">de hardware</span> sin perder el control.</h1>
+                <p class="lead">Sistema de escritorio que digitaliza por completo el flujo de un taller: registro de clientes, equipos, reparaciones, repuestos y control financiero en una sola plataforma.</p>
+                <div class="d-flex flex-wrap gap-3 justify-content-center">
+                    <a href="solucion.html" class="btn btn-lh-primary">Explorar el proyecto <i class="bi bi-arrow-right"></i></a>
+                    <a href="contacto.html" class="btn btn-lh-outline"><i class="bi bi-chat-dots"></i> Contactar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-divider">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path fill="#0f0e17" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"/></svg>
+    </div>
+</section>
+
+<section class="section" style="background: linear-gradient(135deg, #0f0e17, #1a1a25, #0f0e17);">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">Resumen</span>
+            <h2 class="section-title">Todo lo que <span>necesitas saber</span></h2>
+            <p class="section-subtitle">Un vistazo rápido a las secciones principales. Haz clic en "Ver más" para explorar cada una a fondo.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 reveal"><div class="summary-card"><div class="summary-img"><span class="summary-num">01</span><img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&q=80" alt="Problema" loading="lazy"><div class="summary-icon-float"><i class="bi bi-clipboard-x"></i></div></div><div class="summary-body"><h5>Problema</h5><p>Los talleres manejan equipos con libretas y hojas sueltas, causando pérdida de información, retrasos y descontrol financiero.</p><a href="problema.html" class="btn-lh-sm">Ver más <i class="bi bi-arrow-right"></i></a></div></div></div>
+            <div class="col-md-6 col-lg-4 reveal"><div class="summary-card"><div class="summary-img"><span class="summary-num">02</span><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80" alt="Galería" loading="lazy"><div class="summary-icon-float"><i class="bi bi-images"></i></div></div><div class="summary-body"><h5>Galería</h5><p>Descubre cómo se ve un taller real y las capturas del sistema Logic Hardware hecho en Python + Tkinter.</p><a href="galeria.html" class="btn-lh-sm">Ver más <i class="bi bi-arrow-right"></i></a></div></div></div>
+            <div class="col-md-6 col-lg-4 reveal"><div class="summary-card"><div class="summary-img"><span class="summary-num">03</span><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="Justificación" loading="lazy"><div class="summary-icon-float"><i class="bi bi-graph-up-arrow"></i></div></div><div class="summary-body"><h5>Justificación</h5><p>Reduce el tiempo perdido, centraliza la información, mejora la atención al cliente y automatiza el control financiero.</p><a href="justificacion.html" class="btn-lh-sm">Ver más <i class="bi bi-arrow-right"></i></a></div></div></div>
+            <div class="col-md-6 col-lg-4 reveal"><div class="summary-card"><div class="summary-img"><span class="summary-num">04</span><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80" alt="Solución" loading="lazy"><div class="summary-icon-float"><i class="bi bi-bullseye"></i></div></div><div class="summary-body"><h5>Solución</h5><p>Una plataforma completa que gestiona clientes, equipos, reparaciones, repuestos y control financiero en un solo lugar.</p><a href="solucion.html" class="btn-lh-sm">Ver más <i class="bi bi-arrow-right"></i></a></div></div></div>
+            <div class="col-md-6 col-lg-4 reveal"><div class="summary-card"><div class="summary-img"><span class="summary-num">05</span><img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=80" alt="Proceso" loading="lazy"><div class="summary-icon-float"><i class="bi bi-list-check"></i></div></div><div class="summary-body"><h5>Proceso</h5><p>Los 6 estados de una reparación: diagnóstico, cotización, aprobado, en reparación, reparado y entregado.</p><a href="proceso.html" class="btn-lh-sm">Ver más <i class="bi bi-arrow-right"></i></a></div></div></div>
+            <div class="col-md-6 col-lg-4 reveal"><div class="summary-card"><div class="summary-img"><span class="summary-num">06</span><img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80" alt="Requisitos" loading="lazy"><div class="summary-icon-float"><i class="bi bi-download"></i></div></div><div class="summary-body"><h5>Requisitos & Demo</h5><p>Consulta qué necesitas para instalar el sistema y solicita una demo personalizada sin compromiso.</p><a href="#requisitos" class="btn-lh-sm">Ver más <i class="bi bi-arrow-right"></i></a></div></div></div>
+        </div>
+    </div>
+    <div class="section-divider">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path fill="#0a0a0f" d="M0,30 C360,0 1080,60 1440,30 L1440,60 L0,60 Z"/></svg>
+    </div>
+</section>
+
+<section class="section" id="requisitos">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">Instalación</span>
+            <h2 class="section-title">Requisitos <span>del sistema</span></h2>
+            <p class="section-subtitle">Esto es lo que necesitas para ejecutar Logic Hardware en tu taller o computadora.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-6 reveal">
+                <h5 class="text-white fw-bold mb-4"><i class="bi bi-cpu text-danger me-2"></i>Hardware mínimo</h5>
+                <div class="req-item"><div class="req-icon"><i class="bi bi-pc-display"></i></div><div class="req-text"><h6>Sistema Operativo</h6><p>Windows 10 / 11, macOS o Linux</p></div><span class="req-badge">Requerido</span></div>
+                <div class="req-item"><div class="req-icon"><i class="bi bi-memory"></i></div><div class="req-text"><h6>Memoria RAM</h6><p>Mínimo 4 GB (Recomendado 8 GB)</p></div><span class="req-badge">4 GB+</span></div>
+                <div class="req-item"><div class="req-icon"><i class="bi bi-device-hdd"></i></div><div class="req-text"><h6>Espacio en disco</h6><p>500 MB libres para instalación</p></div><span class="req-badge">500 MB</span></div>
+                <div class="req-item"><div class="req-icon"><i class="bi bi-display"></i></div><div class="req-text"><h6>Pantalla</h6><p>Resolución mínima 1280x720</p></div><span class="req-badge">HD</span></div>
+            </div>
+            <div class="col-lg-6 reveal">
+                <h5 class="text-white fw-bold mb-4"><i class="bi bi-code-square text-danger me-2"></i>Software necesario</h5>
+                <div class="req-item"><div class="req-icon"><i class="bi bi-filetype-py"></i></div><div class="req-text"><h6>Python 3.10 o superior</h6><p>Lenguaje base del sistema</p></div><span class="req-badge">Obligatorio</span></div>
+                <div class="req-item"><div class="req-icon"><i class="bi bi-database"></i></div><div class="req-text"><h6>MySQL 8.0 o superior</h6><p>Base de datos para almacenar información</p></div><span class="req-badge">Obligatorio</span></div>
+                <div class="req-item"><div class="req-icon"><i class="bi bi-window"></i></div><div class="req-text"><h6>Tkinter</h6><p>Viene incluido con Python (no requiere instalación)</p></div><span class="req-badge">Incluido</span></div>
+                <div class="req-item"><div class="req-icon"><i class="bi bi-plug"></i></div><div class="req-text"><h6>Conector MySQL</h6><p>Librería <code>mysql-connector-python</code></p></div><span class="req-badge">pip install</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="section-divider">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path fill="#0f0e17" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"/></svg>
+    </div>
+</section>
+
+<section class="section" style="padding: 40px 0;">
+    <div class="container">
+        <div class="lh-card text-center reveal" style="padding: 50px 30px; background: linear-gradient(135deg, rgba(255,46,46,.1), rgba(255,107,53,.05));">
+            <h3 class="text-white fw-bold mb-3" style="font-size: 1.8rem;">¿Listo para digitalizar tu taller?</h3>
+            <p class="text-secondary mb-4">Sistema completo, moderno y funcional para gestionar todas tus reparaciones.</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="solucion.html" class="btn btn-lh-primary"><i class="bi bi-arrow-right"></i> Ver Solución</a>
+                <a href="contacto.html" class="btn btn-lh-outline"><i class="bi bi-chat-dots"></i> Contactar</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row g-4 mb-4">
+            <div class="col-lg-5">
+                <div class="footer-brand">
+                    <svg viewBox="0 0 100 100"><rect x="26" y="26" width="48" height="48" rx="8" fill="none" stroke="#ff2e2e" stroke-width="3.5"/><g fill="#ff2e2e"><rect x="31" y="20" width="2.5" height="7"/><rect x="38" y="20" width="2.5" height="7"/><rect x="45" y="20" width="2.5" height="7"/><rect x="52" y="20" width="2.5" height="7"/><rect x="59" y="20" width="2.5" height="7"/><rect x="66" y="20" width="2.5" height="7"/></g><text x="50" y="60" text-anchor="middle" fill="#ff2e2e" font-size="22" font-weight="900" font-family="Arial">LH</text></svg>
+                    <div><h4>Logic<span>Hardware</span></h4><div class="tagline">Sistema de Gestión de Reparaciones</div></div>
+                </div>
+                <p>Proyecto V1 del módulo 3.1, Especialidad Desarrollo de Software. Sistema de escritorio para la gestión completa de reparaciones de hardware.</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h6>Contacto</h6>
+                <ul>
+                    <li><i class="bi bi-envelope me-2"></i><a href="mailto:contacto@logichardware.com">contacto@logichardware.com</a></li>
+                    <li><i class="bi bi-whatsapp me-2"></i><a href="https://wa.me/50374405490" target="_blank">+503 7440-5490</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Logic Hardware · Instituto Nacional General Francisco Menéndez · Todos los derechos reservados.</div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

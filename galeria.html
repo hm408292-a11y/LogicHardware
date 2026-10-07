@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galería | Logic Hardware</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a0a0f'/%3E%3Crect x='25' y='25' width='50' height='50' rx='8' fill='none' stroke='%23ff2e2e' stroke-width='3'/%3E%3Ctext x='50' y='58' text-anchor='middle' fill='%23ff2e2e' font-size='22' font-weight='900' font-family='Arial'%3ELH%3C/text%3E%3C/svg%3E">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor-glow"></div><div class="cursor-dot"></div>
+<div class="progress-bar-lh" id="progressBar"></div>
+<div class="scroll-circle"><svg viewBox="0 0 50 50"><circle class="circle-bg" cx="25" cy="25" r="22"/><circle class="circle-progress" cx="25" cy="25" r="22"/></svg><div class="circle-text">0%</div></div>
+<button class="back-to-top" aria-label="Volver arriba"><i class="bi bi-arrow-up"></i></button>
+
+<nav class="navbar navbar-expand-lg navbar-lh fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <svg class="logo-svg" viewBox="0 0 100 100">
+                <g transform="translate(72,28)" fill="#6b7280"><circle cx="0" cy="0" r="13"/><rect x="-3" y="-16" width="6" height="6" rx="1"/><rect x="-3" y="10" width="6" height="6" rx="1"/><rect x="-16" y="-3" width="6" height="6" rx="1"/><rect x="10" y="-3" width="6" height="6" rx="1"/><circle cx="0" cy="0" r="5" fill="#12121a"/></g>
+                <g transform="translate(28,72)" fill="#6b7280"><circle cx="0" cy="0" r="10"/><rect x="-2" y="-13" width="5" height="5" rx="1"/><rect x="-2" y="8" width="5" height="5" rx="1"/><rect x="-13" y="-2" width="5" height="5" rx="1"/><rect x="8" y="-2" width="5" height="5" rx="1"/><circle cx="0" cy="0" r="4" fill="#12121a"/></g>
+                <rect x="26" y="26" width="48" height="48" rx="8" fill="none" stroke="#ff2e2e" stroke-width="3.5"/>
+                <g fill="#ff2e2e"><rect x="31" y="20" width="2.5" height="7"/><rect x="38" y="20" width="2.5" height="7"/><rect x="45" y="20" width="2.5" height="7"/><rect x="52" y="20" width="2.5" height="7"/><rect x="59" y="20" width="2.5" height="7"/><rect x="66" y="20" width="2.5" height="7"/><rect x="31" y="73" width="2.5" height="7"/><rect x="38" y="73" width="2.5" height="7"/><rect x="45" y="73" width="2.5" height="7"/><rect x="52" y="73" width="2.5" height="7"/><rect x="59" y="73" width="2.5" height="7"/><rect x="66" y="73" width="2.5" height="7"/><rect x="19" y="31" width="7" height="2.5"/><rect x="19" y="38" width="7" height="2.5"/><rect x="19" y="45" width="7" height="2.5"/><rect x="19" y="52" width="7" height="2.5"/><rect x="19" y="59" width="7" height="2.5"/><rect x="19" y="66" width="7" height="2.5"/><rect x="74" y="31" width="7" height="2.5"/><rect x="74" y="38" width="7" height="2.5"/><rect x="74" y="45" width="7" height="2.5"/><rect x="74" y="52" width="7" height="2.5"/><rect x="74" y="59" width="7" height="2.5"/><rect x="74" y="66" width="7" height="2.5"/></g>
+                <g stroke="#ff2e2e" stroke-width="1.8" fill="none" stroke-linecap="round"><path d="M 33 38 L 38 38 L 38 42 L 43 42"/><path d="M 43 42 L 43 48 L 50 48"/><path d="M 60 38 L 60 45 L 66 45 L 66 52"/><path d="M 36 60 L 42 60 L 42 55 L 48 55"/><path d="M 55 58 L 62 58 L 62 52"/></g>
+                <text x="50" y="60" text-anchor="middle" fill="#ff2e2e" font-size="22" font-weight="900" font-family="Arial">LH</text>
+            </svg>
+            Logic<span>Hardware</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><i class="bi bi-list text-white fs-3"></i></button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="problema.html">Problema</a></li>
+                <li class="nav-item"><a class="nav-link active" href="galeria.html">Galería</a></li>
+                <li class="nav-item"><a class="nav-link" href="justificacion.html">Justificación</a></li>
+                <li class="nav-item"><a class="nav-link" href="solucion.html">Solución</a></li>
+                <li class="nav-item"><a class="nav-link" href="proceso.html">Proceso</a></li>
+                <li class="nav-item"><a class="nav-contact-btn" href="contacto.html"><i class="bi bi-chat-dots"></i> Contactar</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">Capturas del Sistema</span>
+            <h2 class="section-title">Así funciona <span>Logic Hardware</span></h2>
+            <p class="section-subtitle">Vistas de las principales pantallas del sistema desarrollado en Python + Tkinter con base de datos MySQL.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 reveal">
+                <div class="mockup-card">
+                    <div class="mockup-window">
+                        <div class="mockup-titlebar">
+                            <div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div>
+                            <span class="ttl">Logic Hardware · Dashboard</span>
+                        </div>
+                        <div class="mockup-body">
+                            <div class="mockup-sidebar">
+                                <div class="sb-logo">LH</div>
+                                <div class="sb-item active"><i class="bi bi-speedometer2"></i> Dashboard</div>
+                                <div class="sb-item"><i class="bi bi-people"></i> Clientes</div>
+                                <div class="sb-item"><i class="bi bi-laptop"></i> Equipos</div>
+                                <div class="sb-item"><i class="bi bi-tools"></i> Reparaciones</div>
+                                <div class="sb-item"><i class="bi bi-box-seam"></i> Repuestos</div>
+                            </div>
+                            <div class="mockup-main">
+                                <div class="mockup-h">Panel de Control</div>
+                                <div class="mockup-stat-grid">
+                                    <div class="mockup-stat-box"><div class="n">24</div><div class="l">Clientes</div></div>
+                                    <div class="mockup-stat-box"><div class="n">12</div><div class="l">Pendientes</div></div>
+                                    <div class="mockup-stat-box"><div class="n">$1.4k</div><div class="l">Ingresos</div></div>
+                                </div>
+                                <div class="mockup-table">
+                                    <div class="mockup-row head"><span>ID</span><span>Cliente</span><span>Estado</span></div>
+                                    <div class="mockup-row"><span>#001</span><span>Juan P.</span><span><span class="mockup-badge">Reparado</span></span></div>
+                                    <div class="mockup-row"><span>#002</span><span>María L.</span><span><span class="mockup-badge orange">En taller</span></span></div>
+                                    <div class="mockup-row"><span>#003</span><span>Carlos R.</span><span><span class="mockup-badge red">Diagnóstico</span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mockup-label"><i class="bi bi-speedometer2"></i> Dashboard Principal</div>
+                </div>
+            </div>
+            <div class="col-md-6 reveal">
+                <div class="mockup-card">
+                    <div class="mockup-window">
+                        <div class="mockup-titlebar">
+                            <div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div>
+                            <span class="ttl">Logic Hardware · Nuevo Cliente</span>
+                        </div>
+                        <div class="mockup-body">
+                            <div class="mockup-sidebar">
+                                <div class="sb-logo">LH</div>
+                                <div class="sb-item"><i class="bi bi-speedometer2"></i> Dashboard</div>
+                                <div class="sb-item active"><i class="bi bi-people"></i> Clientes</div>
+                                <div class="sb-item"><i class="bi bi-laptop"></i> Equipos</div>
+                                <div class="sb-item"><i class="bi bi-tools"></i> Reparaciones</div>
+                            </div>
+                            <div class="mockup-main">
+                                <div class="mockup-h">Registrar Cliente</div>
+                                <div class="mockup-table">
+                                    <div class="mockup-row head"><span>Campo</span><span>Valor</span><span></span></div>
+                                    <div class="mockup-row"><span>Nombre</span><span>Juan Pérez</span><span></span></div>
+                                    <div class="mockup-row"><span>Teléfono</span><span>+503 7890-1234</span><span></span></div>
+                                    <div class="mockup-row"><span>Correo</span><span>juan@mail.com</span><span></span></div>
+                                </div>
+                                <div class="mockup-btn">Guardar Cliente</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mockup-label"><i class="bi bi-person-plus"></i> Registro de Clientes</div>
+                </div>
+            </div>
+            <div class="col-md-6 reveal">
+                <div class="mockup-card">
+                    <div class="mockup-window">
+                        <div class="mockup-titlebar">
+                            <div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div>
+                            <span class="ttl">Logic Hardware · Reparaciones</span>
+                        </div>
+                        <div class="mockup-body">
+                            <div class="mockup-sidebar">
+                                <div class="sb-logo">LH</div>
+                                <div class="sb-item"><i class="bi bi-speedometer2"></i> Dashboard</div>
+                                <div class="sb-item"><i class="bi bi-people"></i> Clientes</div>
+                                <div class="sb-item active"><i class="bi bi-tools"></i> Reparaciones</div>
+                            </div>
+                            <div class="mockup-main">
+                                <div class="mockup-h">Lista de Reparaciones</div>
+                                <div class="mockup-table">
+                                    <div class="mockup-row head"><span>Equipo</span><span>Estado</span><span>Costo</span></div>
+                                    <div class="mockup-row"><span>Dell XPS 13</span><span><span class="mockup-badge orange">En proceso</span></span><span>$85</span></div>
+                                    <div class="mockup-row"><span>HP Pavilion</span><span><span class="mockup-badge">Reparado</span></span><span>$120</span></div>
+                                    <div class="mockup-row"><span>MacBook Air</span><span><span class="mockup-badge red">Diagnóstico</span></span><span>$—</span></div>
+                                    <div class="mockup-row"><span>Lenovo IdeaPad</span><span><span class="mockup-badge">Entregado</span></span><span>$95</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mockup-label"><i class="bi bi-tools"></i> Gestión de Reparaciones</div>
+                </div>
+            </div>
+            <div class="col-md-6 reveal">
+                <div class="mockup-card">
+                    <div class="mockup-window">
+                        <div class="mockup-titlebar">
+                            <div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div>
+                            <span class="ttl">Logic Hardware · Reportes</span>
+                        </div>
+                        <div class="mockup-body">
+                            <div class="mockup-sidebar">
+                                <div class="sb-logo">LH</div>
+                                <div class="sb-item"><i class="bi bi-speedometer2"></i> Dashboard</div>
+                                <div class="sb-item active"><i class="bi bi-graph-up"></i> Reportes</div>
+                                <div class="sb-item"><i class="bi bi-file-earmark-pdf"></i> Exportar</div>
+                            </div>
+                            <div class="mockup-main">
+                                <div class="mockup-h">Ingresos del Mes</div>
+                                <div class="mockup-stat-grid">
+                                    <div class="mockup-stat-box"><div class="n">$2.4k</div><div class="l">Total</div></div>
+                                    <div class="mockup-stat-box"><div class="n">48</div><div class="l">Trabajos</div></div>
+                                    <div class="mockup-stat-box"><div class="n">+18%</div><div class="l">vs. Mes</div></div>
+                                </div>
+                                <div class="mockup-table">
+                                    <div class="mockup-row head"><span>Fecha</span><span>Servicio</span><span>Monto</span></div>
+                                    <div class="mockup-row"><span>12/08</span><span>Cambio SSD</span><span>$85</span></div>
+                                    <div class="mockup-row"><span>14/08</span><span>Limpieza</span><span>$40</span></div>
+                                    <div class="mockup-row"><span>16/08</span><span>Pantalla</span><span>$150</span></div>
+                                </div>
+                                <div class="mockup-btn">Exportar a PDF</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mockup-label"><i class="bi bi-file-earmark-bar-graph"></i> Reportes y Exportación</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-divider">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path fill="#0f0e17" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"/></svg>
+    </div>
+</section>
+
+<section class="section" style="background: linear-gradient(135deg, #0f0e17, #1a1a25, #0f0e17);">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">Mundo Real</span>
+            <h2 class="section-title">El contexto del <span>taller</span></h2>
+            <p class="section-subtitle">Técnicos, equipos y componentes reales que inspiraron el desarrollo de Logic Hardware.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 reveal"><div class="gallery-item"><img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80" alt="Técnico" loading="lazy"><div class="gallery-overlay"><i class="bi bi-tools"></i><h6>Técnicos en acción</h6><p>Reparación de equipos reales</p></div></div></div>
+            <div class="col-md-6 col-lg-4 reveal"><div class="gallery-item"><img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=800&q=80" alt="Laptop" loading="lazy"><div class="gallery-overlay"><i class="bi bi-laptop"></i><h6>Equipos de todo tipo</h6><p>Laptops, PCs y servidores</p></div></div></div>
+            <div class="col-md-6 col-lg-4 reveal"><div class="gallery-item"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80" alt="Placa base" loading="lazy"><div class="gallery-overlay"><i class="bi bi-cpu"></i><h6>Componentes</h6><p>Cada pieza, registrada</p></div></div></div>
+            <div class="col-md-6 col-lg-4 reveal"><div class="gallery-item"><img src="https://images.unsplash.com/photo-1560732488-6b0df240254a?w=800&q=80" alt="Servidores" loading="lazy"><div class="gallery-overlay"><i class="bi bi-server"></i><h6>Servidores</h6><p>Infraestructura crítica</p></div></div></div>
+            <div class="col-md-6 col-lg-4 reveal"><div class="gallery-item"><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80" alt="Circuito" loading="lazy"><div class="gallery-overlay"><i class="bi bi-motherboard"></i><h6>Diagnóstico</h6><p>Precisión en cada reparación</p></div></div></div>
+            <div class="col-md-6 col-lg-4 reveal"><div class="gallery-item"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80" alt="Código" loading="lazy"><div class="gallery-overlay"><i class="bi bi-code-slash"></i><h6>Software propio</h6><p>Hecho con Python + MySQL</p></div></div></div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-bottom">© 2026 Logic Hardware · Instituto Nacional General Francisco Menéndez · Todos los derechos reservados.</div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
